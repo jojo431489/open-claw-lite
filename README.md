@@ -1,8 +1,37 @@
 # 🦞 OpenClaw Lite
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node.js](https://img.shields.io/badge/Node.js-22+-green.svg)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://www.docker.com/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/jojo431489/open-claw-lite/pulls)
+
 **受 OpenClaw 啟發的開源本地 AI 助理框架**
 
 一個模組化、可擴充的個人 AI 助理，支援 LINE、Telegram、Discord 多平台通訊整合，具備記憶系統、技能插件系統，以及 ReAct 風格的工具呼叫代理。
+
+> 🌟 **本地優先** | 🔒 **隱私可控** | 🔌 **可擴充** | 🌏 **繁體中文友善**
+
+---
+
+## 🎬 5 分鐘快速體驗
+
+```bash
+# 1. Clone & Install
+git clone https://github.com/jojo431489/open-claw-lite.git
+cd open-claw-lite
+npm install
+
+# 2. 互動式設定（會引導你填 API Key）
+npm run onboard
+
+# 3. 啟動
+npm run dev
+
+# 4. 打開瀏覽器訪問 http://localhost:3000 開始對話！
+```
+
+無需註冊任何雲端服務，所有資料都在你的機器上。
 
 ---
 
@@ -382,10 +411,53 @@ docker-compose down
 
 ---
 
-## 📄 授權
+## 🤝 貢獻
 
-MIT License
+歡迎 PR、Issue、討論！
+
+- 🐛 **回報 Bug**：[開新 Issue](https://github.com/jojo431489/open-claw-lite/issues/new)
+- 💡 **功能建議**：[Discussions](https://github.com/jojo431489/open-claw-lite/discussions)
+- 🔧 **提交 PR**：Fork → 修改 → 發 PR
+
+特別歡迎這些貢獻：
+- 新增技能插件（在 `skills-builtin/` 下）
+- 新增通訊平台整合（Slack、Discord 改進等）
+- 翻譯（簡中、English、日本語）
+- 教學文件、影片
 
 ---
 
-🦞 **Happy Hacking!**
+## ⭐ Star History
+
+如果這個專案對你有幫助，給個 Star 鼓勵一下！
+
+[![Star History Chart](https://api.star-history.com/svg?repos=jojo431489/open-claw-lite&type=Date)](https://star-history.com/#jojo431489/open-claw-lite&Date)
+
+---
+
+## 📄 授權
+
+[MIT License](LICENSE) - Copyright (c) 2026 Bo Cheng Tian (田柏程)
+
+可自由使用、修改、商業使用，唯一要求保留著作權聲明。
+
+---
+
+## 🙏 致謝
+
+- 受 [OpenClaw](https://github.com/openclaw) 啟發
+- 使用 [Anthropic Claude](https://www.anthropic.com/) / [OpenAI](https://openai.com/) / [Ollama](https://ollama.com/) 提供 AI 能力
+- LINE / Telegram / Discord 平台 SDK
+
+---
+
+## 📬 聯絡
+
+- **作者**：田柏程 (Bo Cheng Tian)
+- **GitHub**：[@jojo431489](https://github.com/jojo431489)
+- **LinkedIn**：[bochengtian](https://www.linkedin.com/in/bochengtian)
+- **個人網站**：[BCTech 製造業顧問](https://consulting-site-orcin.vercel.app)
+
+---
+
+🦞 **Happy Hacking!** 如果遇到任何問題，歡迎開 Issue 或聯絡我。
