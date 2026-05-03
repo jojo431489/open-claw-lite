@@ -64,8 +64,11 @@ export class TelegramAdapter implements ChannelAdapter {
       await this.messageHandler(incoming);
     });
 
-    // Start polling
-    await this.bot.launch();
+    // Start polling. Telegraf's launch() returns a promise that only resolves
+    // when the bot stops, so don't await it — it would block subsequent channel
+    // initialisation. Capture any startup errors instead.
+    this.bot.launch().catch((err) => logger.error(`Telegram polling error: ${err}`));
+
     const botInfo = await this.bot.telegram.getMe();
     logger.info(`🟢 Telegram bot started: @${botInfo.username}`);
 
