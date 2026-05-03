@@ -1,0 +1,33 @@
+{
+  "botName": "alex",
+  "language": "zh-TW",
+  "timezone": "Asia/Taipei",
+  "llm": {
+    "provider": "ollama",
+    "apiKey": "",
+    "model": "llama3",
+    "baseUrl": "http://localhost:11434",
+    "temperature": 0.7,
+    "maxTokens": 4096
+  },
+  "channels": {},
+  "memory": {
+    "enabled": true,
+    "dbPath": "./data/memory.db",
+    "maxEntriesPerUser": 500,
+    "autoExtract": true
+  },
+  "skills": {
+    "enabled": true,
+    "directory": "./skills-builtin",
+    "autoLoad": true
+  },
+  "server": {
+    "port": 3000
+  },
+  "security": {
+    "allowedUsers": [],
+    "adminUsers": [],
+    "requireApproval": false
+  }
+}

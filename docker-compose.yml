@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  openclaw-lite:
+    build: .
+    container_name: openclaw-lite
+    ports:
+      - "${PORT:-3000}:3000"
+    volumes:
+      - ./data:/app/data
+      - ./config:/app/config
+      - ./skills-builtin:/app/skills-builtin
+    env_file:
+      - .env
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production

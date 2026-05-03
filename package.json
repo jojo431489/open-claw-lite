@@ -1,0 +1,40 @@
+{
+  "name": "open-claw-lite",
+  "version": "1.0.0",
+  "description": "OpenClaw-style AI assistant with LINE/Telegram/Discord support",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "npx tsx src/index.ts",
+    "onboard": "npx tsx src/onboard.ts"
+  },
+  "dependencies": {
+    "@line/bot-sdk": "^9.6.0",
+    "telegraf": "^4.16.3",
+    "discord.js": "^14.16.3",
+    "@anthropic-ai/sdk": "^0.39.0",
+    "openai": "^4.77.0",
+    "express": "^4.21.1",
+    "better-sqlite3": "^11.7.0",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.7",
+    "glob": "^11.0.0",
+    "inquirer": "^12.2.0",
+    "uuid": "^11.0.3",
+    "winston": "^3.17.0",
+    "yaml": "^2.6.1",
+    "chokidar": "^4.0.3",
+    "croner": "^9.0.0",
+    "marked": "^15.0.4"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
